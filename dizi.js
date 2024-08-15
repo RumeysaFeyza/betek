@@ -6,15 +6,18 @@ list.push("4")
 list.push(3)
 console.log(list.length)
 
+//splice 45i sildi
 var list = [8, 12 , 45 , "test" , 2]
 list.splice(2,1)
 console.log(list)
 
-// verilen bir metni liste haline getirme
+// verilen bir metni liste haline getirme 
+//split boşluktan itibaren ayırdı
 var test = "merhaba dünya nasilsin"
 var response = test.split(" ")
 console.log(response)
 
+//split k den itibaren ayırdı
 var ornek= "hukuk okuyorum"
 var response = ornek.split("k")
 console.log(response)
@@ -90,7 +93,7 @@ var responce = array.join("-")
 console.log(responce)
 
 
-// join örnek BURAYA BİR BAK !
+// join 
 var text = "istanbul, türkiye'nin en kalabalık şehridir"
 var responce  = text.split(" ")
 

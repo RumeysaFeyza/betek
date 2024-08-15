@@ -8,7 +8,7 @@ var response = `${e1}-${e2}-${e3}`.toUpperCase()
 console.log(response)
 
 
-var num = "k"
+var num = 6
 var response
 if(typeof num !="number") response= "Lütfen bir sayi giriniz"
 else if (num %2 == 0) response = `${num}= cift sayi`
@@ -49,3 +49,30 @@ switch (expression) {
 
 }
    console.log(response)
+
+  
+   // Fonksiyonlar Örnek
+
+   function call_back_function(result) {
+    var text = (result == true) ? "Girilen Sayi Çift" : "Girilen Sayi tek"
+    console.log(text)
+ 
+
+   }
+
+   function cift_mi (x, callback) {
+    var result = (x %2 ==0) ? true:false
+    callback(result)
+   }
+   cift_mi(4, call_back_function)
+   
+
+   // recursive örneği
+   function recursive_fac(x) {
+
+    if (x==0 ) return 1
+    else return x * recursive_fac(x-1)
+   }
+   console.log(recursive_fac(6))
+
+  
