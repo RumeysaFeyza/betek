@@ -13,7 +13,7 @@ function denek(n){
     if(n==3) return
     console.log(n)
 }
-denek(5)
+denek(4)
 
 
 var yol = function(n) {
@@ -74,7 +74,7 @@ function test(){
     console.log("Test fonksiyonu çalıştı!")
 
     function nest_funct() {
-        console.log("Nest Func Çalıştı")
+        console.log("Test Func Çalıştı")
     }
     nest_funct()
 }

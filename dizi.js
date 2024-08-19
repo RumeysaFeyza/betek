@@ -37,10 +37,10 @@ console.log(list)
 
 // slice metodu ilk sayı kaçıncı indeksten itibaren olduğunu ikinci sayı kaçıncı indekse kadar olduğu ama burada liste eşitlemek de gerekiyor.
 var list = ["murat","ayşe", "demir", "ilay", "ege","efe","can","sefa"]
-list = list.slice(2,3)
+list = list.slice(2,4)
 console.log(list)
 
-// splice ile ekelem yapabilme (1.indekse testi ekledik.)
+// splice ile ekleme yapabilme (1.indekse testi ekledik.)
 var list = ["ahmet", "mehmet","murat", "mert"]
 list.splice(1,0,"test")
 console.log(list)
