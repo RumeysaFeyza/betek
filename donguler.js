@@ -128,4 +128,37 @@ var array= [1,2,3,4]
     // foreach döngüsü lenght hesaplarken ", ," arasında undefined görüyor ama ama for off döngüsü sayıyor
 
 
-    
+// dizi2den sonra FOR İN döngüsü
+// for in döngüsü bizim nesnelerin keyleri arasında dönememizi sağlayan döngüdür
+
+// a b c aldık
+var nesne= {
+    "a":1,
+    "b":2,
+    "c":3
+}
+for (var key of Object.keys(nesne)) {
+    console.log(key)
+} 
+// for in döngüsüyle d e f yi aldık
+var nesne= {
+    "d":1,
+    "e":2,
+    "f":3
+}
+for (var key of Object.keys(nesne)) {
+    console.log(key)
+}
+
+
+// döngü içinde bir değişiklik yapılırsa döngü bundan etkilenir ona göre çıktı verir
+var nesne = {
+    "a":1,
+    "b":2,
+    "c":3
+}
+for (var key in nesne) {
+    if (key=="b") delete nesne ["c"]
+    console.log(key,nesne[key])
+}
+
