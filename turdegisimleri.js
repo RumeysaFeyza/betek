@@ -4,7 +4,7 @@ var a = "3.14"
 var total = parseInt(a)
 console.log(total)
 
-// stringten integer eçevirme parseFloat methodu
+// stringten integere çevirme parseFloat methodu
 var a ="3.65"
 var total = parseFloat(a)
 console.log(total)
@@ -84,7 +84,7 @@ console.log(condition1 && condition2)
 
  // if else yapıları
  
- var age = 9
+ var age = 15
 
  if (age >=18) {
     console.log("oyun başlatıldı")

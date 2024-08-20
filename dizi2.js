@@ -138,7 +138,7 @@ console.log(result)
 
 
 
-// aşağıdaki iki kodda aynı işi yaparhangi harften kaç kez kullanıldığını hesaplar
+// aşağıdaki iki kodda aynı işi yapar hangi harften kaç kez kullanıldığını hesaplar
 var list =["a","b", "c","a","d","e","b","b","a","c","f"]
 
 var result= list.reduce((response,current) => {
