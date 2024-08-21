@@ -95,6 +95,50 @@ throw new Error("Test")
     console.log("Hata Catch Tarafından Yakalandı")
 }
 
-*/
+
 
 // CALLBACK
+
+// callback zsorun.mjsteki test mesajını okumaya çalışıyoruz
+
+// bu bir mesajdır yazısını gördük
+// z.txtyi silseydik var olmayan bir dosyayı okumaya çalıştığı için yine hata mesajı alırdık
+import fs from "fs"
+fs.readFile("./z.txt", "utf-8", (err,data) => {
+    if (err) console.log(err)
+
+
+    console.log(data)
+})
+
+
+
+// { name: 'Ali Eren' }
+function getUserData(id, callback) {
+
+
+   var user = {"name": "Ali Eren" }
+   if (!user) return callback(new Error("User not found!"))
+   callback(null,user)
+}
+getUserData(1, (err, user)=> {
+    if(err) console.log(err)
+    console.log(user)
+})
+
+
+
+// Error: User not found!
+function getUserData(id, callback) {
+
+
+    var user = undefined
+    if (!user) return callback(new Error("User not found!"))
+    callback(null,user)
+ }
+ getUserData(1, (err, user)=> {
+     if(err) console.log(err)
+     console.log(user)
+ })
+
+*/
