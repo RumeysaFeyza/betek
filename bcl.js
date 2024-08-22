@@ -21,3 +21,4 @@ for (age of ages) {
 // LABEL etiket ilk döngü son döngü gibi şeylerde kullanılır.
 
 
+

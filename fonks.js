@@ -30,7 +30,7 @@ console.log(loy(5))
 
 
 
-//1. argümanı verir
+// 1
 function test(x) {
     console.log(arguments[0])
 }
@@ -38,7 +38,7 @@ test(1,2,3,4)
 
 
 
-// argümanlar
+// [Arguments] { '0': 1, '1': 2, '2': 3, '3': 4 }
 function test(x) {
     console.log(arguments)
 }
@@ -58,10 +58,10 @@ function square(n) {
     return n**2
 }
 function test(callback) {
-    console.log("test")
+    console.log("test")   //test
 
     var result = callback(2)
-    console.log(result)
+    console.log(result) // 4 
 
 }
 

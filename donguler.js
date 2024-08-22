@@ -96,6 +96,11 @@ array.forEach(function (e,i) {
 
 /*
 
+// [ 'Ali', 'Ayşe', 'Mehmet', 'Ece' ]
+// [ 'Ali', 'Ayşe', 'Mehmet', 'Ece' ]
+// [ 'Ali', 'Ayşe', 'Mehmet', 'Ece' ]
+// [ 'Ali', 'Ayşe', 'Mehmet', 'Ece' ]
+
 // burası 4 kere dizi elemanaları yazdırıyor çünkü 4 eleman var  ( alt kısımdaki kod tek başına çalışıyor ama üsttekilerle beraber çalışmıyor)
 
 ["Ali", "Ayşe", "Mehmet", "Ece"].forEach((e,i,array) => {
