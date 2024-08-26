@@ -1,4 +1,4 @@
-
+/*
 // BREAK STATEMENT
 // aşağıdaki fonksiyon break görünce kırıldı devam etmedi 5'e kadar yazdırdı
 for (var i= 0; i <10; i ++) {
@@ -19,6 +19,5 @@ for (age of ages) {
 }
 
 // LABEL etiket ilk döngü son döngü gibi şeylerde kullanılır.
-
-
+*/
 

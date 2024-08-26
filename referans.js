@@ -8,7 +8,7 @@ var data = {
 }
 var data2 = data
 data2.x =15
-console.log(data)
+console.log(data) // { name: 'Ali', age: 18, x: 15 }
 
 // datayı data2ye eşitlediğinde iksi aynı yeri referans gösteriyor biz bunu değiştirmek için data2yi dataya atamak yerine data data2ye kopyalansın istiyoruz
 // bunun 2 tolu var biri ... (spread syntax), diğeri Assign
@@ -19,8 +19,8 @@ var data = {name: "Ahmet"}
 var data2 = { ...data }
 data2.name = "Mehmet"
 
-console.log(data)
-console.log(data2)
+console.log(data) // { name: 'Ahmet' }
+console.log(data2) // { name: 'Mehmet' }
 
 
 // Assign
@@ -29,8 +29,8 @@ var data2 = Object.assign({}, data)
 
 data2.name ="Mehmet"
 
-console.log(data)
-console.log(data2)
+console.log(data) // { name: 'Ahmet' }
+console.log(data2) // { name: 'Mehmet' }
 
 /*
 // burada false çıktısını aldık çünkü referans tiplerinde yapılan karşılaştırmalar değerlerini değil referans tiplerini karşılaştırır
@@ -51,7 +51,7 @@ var data2 = { ...data}
 
 var result = JSON.stringify(data)
 
-console.log(result) // {"name":"Ahmet"} çıktısını alırız
+console.log(result) // {name: "Ahmet"} çıktısını alırız
 
 
 
@@ -72,7 +72,7 @@ var data2= {...data}
 data2.name= "mehmet"
 data2.adress.street = "y street"
 
-console.log(data)
-console.log(data2)
+console.log(data) // { name: 'Ahmet', adress: { street: 'y street', no: 5 } }
+console.log(data2) // { name: 'mehmet', adress: { street: 'y street', no: 5 } }
 
 

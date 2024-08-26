@@ -18,12 +18,12 @@ liste = liste.map((e,i) => `${i + 1}. ${e}`).join("\n")
 console.log(liste)
 
 
-// find metodu liste içinde belirli bir şarta göre istenilen elemeanı döndürür
+// find metodu liste içinde belirli bir şarta göre istenilen elemanı döndürür
 // aşağıdaki kod ali ile başlayan ilk elemanı döndürür
 var liste = ["Ali eren","Ahmet" , "Mehmet"]
-var result = liste.find( e => e.startsWith("Ali"))
-var result= liste.find(e=> e.length <7)
-var result = liste.findIndex(e=> e.length< 7)
+var result = liste.find( e => e.startsWith("Ali")) // ali eren
+var result= liste.find(e=> e.length <7) // ahmet
+var result = liste.findIndex(e=> e.length< 7) //1
 
 console.log(result)
 
@@ -157,7 +157,7 @@ var result = list.reduce((response, current ) => {
 console.log(result)
 
 
-// tekrarlanmayı değil unique değerleir istiyoruz 1 2 3 7 8
+// tekrarlanmayı değil unique değerleri  istiyoruz 1 2 3 7 8
 var array = [1,3,1,7,3,2,8]
 
 var result = array.reduce((response, current) => {

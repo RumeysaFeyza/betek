@@ -23,7 +23,8 @@ console.log(user["age"])
 
 
 
-// nesnenin içine fonksiyon yazıp sonrasında çağırma ----->Test! yazdı 
+// nesnenin içine fonksiyon yazıp sonrasında çağırma ----->
+// Test! yazdı 
  var user = {
     name: "Ali Eren",
     address: {
@@ -40,6 +41,12 @@ user.test()
 
 
 // nesnenin içerisinden property silme örn agei silelim
+/*
+{
+    name: 'Ali Eren',
+    address: { street: 'X street', no: 3 },
+    test: [Function: test]
+  } yazdı */
 var user = {
     name: "Ali Eren",
     age: 15,
@@ -58,30 +65,6 @@ console.log(user)
 
 
 
-// son iki satırdan ilkine yazılan kod keysleri yani name age adress test çıktısını verir.
-// son satıra yazılan kod değerleri yani ali erem 15 adres ve test çıksını verir
-var user = {
-    name: "Ali Eren",
-    age: 15,
-    address: {
-        street: "X street",
-        no:3,
-    },
-    test() {
-        console.log("Test!")
-
-    }   
- } 
-
- console.log(Object.keys(user))
-console.log(Object.values(user))
-
-// 2. indeksi yani addresi verir konsolda " street: 'x street', no:3  " çıktısını alırız.
-console.log(Object.values(user)[2]) 
-
-
-// hem keyler hem valuelar için
-
 
 var user = {
     name: "Ali Eren",
@@ -95,8 +78,31 @@ var user = {
 
     }   
  } 
-console.log(Object.entries(user))
-console.log(Object.entries(user)[1]) // 'age',15 cıktısını verir yani 1. index
+
+ console.log(Object.keys(user)) // [ 'name', 'age', 'address', 'test' ]
+console.log(Object.values(user)) // [ 'Ali Eren', 15, { street: 'X street', no: 3 }, [Function: test] ]
+
+
+console.log(Object.values(user)[2]) // 2. indeks yani addressi --> { street: 'X street', no: 3 }
+
+
+
+
+
+var user = {
+    name: "Ali Eren",
+    age: 15,
+    address: {
+        street: "X street",
+        no:3,
+    },
+    test() {
+        console.log("Test!")
+
+    }   
+ } 
+console.log(Object.entries(user)) // hem keyler hem valuelar
+console.log(Object.entries(user)[1]) // ['age',15] cıktısını verir yani 1. index
 
 
 
@@ -184,7 +190,8 @@ Object.seal(data)
 delete data["name"]
 data.x = 15
 data.name = "Ahmet"
-console.log(data) // seal izin vermediği için aliyi silmedi ama sealden önce delete yaparsak siler. aynı şekilde xi ekleme de yapamadı
+console.log(data)   // { name: 'Ahmet', age: 19, y: 3 }
+                   // seal izin vermediği için aliyi silmedi ama sealden önce delete yaparsak siler. aynı şekilde xi ekleme de yapamadı
                   // amam mevcut property değiştirilebilir yani ahmeti görürüz
         
         
