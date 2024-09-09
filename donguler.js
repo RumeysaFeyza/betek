@@ -113,7 +113,7 @@ array.forEach(function (e,i) {
 var array= [1,2,3,4]
 // dizideki elemanı değiştirme yani yeni dizi 1 2 5 4
 //array.forEach(e => {
-   // console.log(e)
+//console.log(e)
     //array[2]=5
 
 //})

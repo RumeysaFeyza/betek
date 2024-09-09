@@ -1,4 +1,4 @@
-/*
+
 // bir promise 3 farklı durumda olabilir
 // 1) pending: promise bekliyor ilk durum tamamlanmamış veya reddedilmemiş
 // resolve edildiyse 2) fulfilled duruma geçer promise başarılı olmuş
@@ -135,4 +135,4 @@ sleep(3000)
  await sleep(3000)
  console.log("3 saniye beklendi!")
 
- */
+ 
